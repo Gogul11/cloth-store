@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+
+@keyframes circular-scroll {
+  0% {
+    /* transform: translateX(0%); */
+    transform: rotate(0deg);
+  }
+  /* 50% {
+    transform: translateX(-50%);
+  } */
+  100%{
+    /* transform: translateX(0%); */
+    transform: rotate(360deg);
+  }
+}
+
+.animate-circular-scroll {
+  animation: circular-scroll 20s linear infinite;
+  will-change: transform;
+}
+
+@keyframes rotateIn {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg) scale(0.8);
+    background-color: gray;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);
+  }
+}
+
+@keyframes rotateOut {
+  0% {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: rotateY(-90deg) scale(0.8);
+  }
+}
+
+.rotate-in {
+  animation: rotateIn 2s ease-in-out forwards;
+}
+
+.rotate-out {
+  animation: rotateOut 2s ease-in-out forwards;
+}
