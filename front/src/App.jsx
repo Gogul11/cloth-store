@@ -2,6 +2,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/login'
 import ItemsSection from './pages/itemsection'
+import About from './pages/About'
 
 function App() {
 
@@ -19,6 +20,10 @@ function App() {
         <Route
           path='/purchase'
           element={<ItemsSection/>}
+        />
+        <Route
+          path='/about'
+          element={<About/>}
         />
       </Routes>
     </BrowserRouter>

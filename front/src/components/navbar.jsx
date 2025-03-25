@@ -12,7 +12,7 @@ export default function NavBar() {
       <div className="flex flex-row gap-2.5 h-16 w-6xl bg-black backdrop-blur-lg rounded-[30px] mt-4 justify-evenly items-center shadow-lg border border-white/30">
         <p className={eleStyle} onClick={() => navigate('/')}>Home</p>
         <p className={eleStyle} onClick={() => navigate('/purchase')}>Purchase</p>
-        <p className={eleStyle}>About</p>
+        <p className={eleStyle} onClick={() => navigate('/about')}>About</p>
         {log ? 
           <p className={eleStyle}>Profile</p>
         :
