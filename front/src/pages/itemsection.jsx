@@ -32,6 +32,62 @@ const products = [
     rating: 4.8,
     image: "https://source.unsplash.com/400x400/?dress",
   },
+  {
+    id: 1,
+    name: "Casual Shirt",
+    price: "$30",
+    rating: 4.5,
+    image: "https://source.unsplash.com/400x400/?shirt",
+  },
+  {
+    id: 2,
+    name: "Denim Jacket",
+    price: "$60",
+    rating: 4.7,
+    image: "https://source.unsplash.com/400x400/?jacket",
+  },
+  {
+    id: 3,
+    name: "Sneakers",
+    price: "$50",
+    rating: 4.3,
+    image: "https://source.unsplash.com/400x400/?shoes",
+  },
+  {
+    id: 4,
+    name: "Elegant Dress",
+    price: "$90",
+    rating: 4.8,
+    image: "https://source.unsplash.com/400x400/?dress",
+  },
+  {
+    id: 1,
+    name: "Casual Shirt",
+    price: "$30",
+    rating: 4.5,
+    image: "https://source.unsplash.com/400x400/?shirt",
+  },
+  {
+    id: 2,
+    name: "Denim Jacket",
+    price: "$60",
+    rating: 4.7,
+    image: "https://source.unsplash.com/400x400/?jacket",
+  },
+  {
+    id: 3,
+    name: "Sneakers",
+    price: "$50",
+    rating: 4.3,
+    image: "https://source.unsplash.com/400x400/?shoes",
+  },
+  {
+    id: 4,
+    name: "Elegant Dress",
+    price: "$90",
+    rating: 4.8,
+    image: "https://source.unsplash.com/400x400/?dress",
+  },
 ];
 
 export default function AjioClone() {
@@ -41,39 +97,7 @@ export default function AjioClone() {
     <div className="min-h-screen m-3">
        <div className="flex justify-center m-3">
                <NavBar />
-             </div>
-      <nav className="flex items-center justify-between px-4 py-4 shadow-md bg-white md:px-8">
-        <div className="hidden md:flex items-center gap-4">
-          <div className="relative w-full max-w-xs">
-            <input
-              type="text"
-              placeholder="Search for products"
-              className="px-4 py-2 w-full border rounded-lg focus:outline-none"
-            />
-            <Search className="absolute top-2 right-3 text-gray-600" />
-          </div>
-          <User className="text-gray-700 cursor-pointer" />
-          <ShoppingCart className="text-gray-700 cursor-pointer" />
-        </div>
-        <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </nav>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden flex flex-col items-center bg-gray-100 py-4">
-          <input
-            type="text"
-            placeholder="Search for products"
-            className="px-4 py-2 w-4/5 border rounded-lg focus:outline-none mb-4"
-          />
-          <div className="flex gap-4">
-            <User className="text-gray-700 cursor-pointer" />
-            <ShoppingCart className="text-gray-700 cursor-pointer" />
-          </div>
-        </div>
-      )}
+       </div>
 
       {/* Hero Section */}
       <div className="relative w-full h-52 md:h-80 bg-gray-200 flex items-center justify-center">

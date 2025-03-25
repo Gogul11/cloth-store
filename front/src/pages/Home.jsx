@@ -1,11 +1,13 @@
 import NavBar from "../components/navbar";
 import Carousel from "../components/coursel";
+import FAQ from "./fav";
+import Footer from "./footer";
 
 export default function Home() {
   const arr = ["hi", "this", "is", "gogul"];
 
   return (
-    <div className="min-h-screen flex flex-col gap-8 mb-12">
+    <div className="min-h-screen flex flex-col gap-8">
       <div className="flex justify-center">
         <NavBar />
       </div>
@@ -27,6 +29,13 @@ export default function Home() {
 
       <div className="flex justify-center items-center mt-6 sm:mt-10">
         <Carousel items={arr} />
+      </div>
+
+      <div>
+        <FAQ/>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );
