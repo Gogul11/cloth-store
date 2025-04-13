@@ -6,11 +6,8 @@ export default function About() {
 
     return (
         <div>
-
+            <NavBar />
             <div className="mt-5 max-w-screen-lg mx-auto">
-                <div className="flex justify-center">
-                    <NavBar />
-                </div>
                 <p className="text-[40px] text-white my-4 font-bold text-center">ABOUT US</p>
                 <div className="my-5 p-4 flex flex-col gap-10 md:flex-row md:items-center">
 
@@ -39,13 +36,11 @@ export default function About() {
 
                     {/* Image Section */}
                     <div className="w-full md:w-1/3 flex justify-center">
-                        <img src="https://placehold.co/300x300.png" alt="Fashion Display" className="w-full max-w-xs md:max-w-sm rounded-lg shadow-lg" />
+                        <img src="https://picsum.photos/300/300" alt="Fashion Display" className="w-full max-w-xs md:max-w-sm rounded-lg shadow-lg" />
                     </div>
                 </div>
             </div>
-            <div>
-                <Footer/>
-            </div>
+            <Footer/>
         </div>
 
     );

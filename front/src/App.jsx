@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Login from './pages/login'
 import ItemsSection from './pages/itemsection'
 import About from './pages/About'
+import Itemdetail from './pages/itemdetail'
 
 function App() {
 
@@ -24,6 +25,10 @@ function App() {
         <Route
           path='/about'
           element={<About/>}
+        />
+        <Route
+          path='/itemdetail'
+          element={<Itemdetail/>}
         />
       </Routes>
     </BrowserRouter>

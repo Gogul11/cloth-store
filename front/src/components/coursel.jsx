@@ -21,7 +21,7 @@ const Carousel = ({ items }) => {
           }`}
         >
           <img
-            src={`https://placehold.co/300x300.png`}
+            src={`https://picsum.photos/300/300`}
             alt="Clothing Item"
             className="w-[90%] h-[250px] object-cover rounded-t-2xl"
           />
